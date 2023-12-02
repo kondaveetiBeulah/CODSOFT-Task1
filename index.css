@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://tse3.mm.bing.net/th?id=OIP.ODq8koXTZcEboSZtsoKJ1QHaDt&pid=Api&P=0&h=220");
+    background-size:cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+   cursor: pointer; 
+   color: aqua;
+   font-size: 40px;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top: 50%;
+    text-align:center ;
+    color: aliceblue;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auton;
+}
+.button{
+    width:200px;
+    padding:15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    border: solid 2px #009688;
+    position: relative;
+    overflow: hidden;
+
+}
+span{
+    background-color: #009688;
+    height:100%;
+    width:0;
+    border-radius: 25px;
+    bottom:0;
+    position: absolute;
+    left:0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width:100%;
+
+}
+button:hover{
+    border:none;
+}
+.br-content{
+    display:flex;
+}
+.img{
+    height:200px;
+}
+.main-page h1{
+   margin-left: 50px;
+   margin-top: 50px;
+   margin-bottom: 20px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: azure;
+   
+}
+.br-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.card img{
+    background-color: #eef2f1;
+    height:200px;
+    padding:15px;
+    width:300px;
+    border-radius: 9px;
+}
+.rooms{
+    background-color: rgb(102, 130, 130);
+    padding: 4px;
+}
+.footer-section{
+    background:radial-gradient( rgba(14, 228, 46, 0.071),rgb(38, 30, 30));
+    padding: 10px;
+
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    height: 100px;
+    border-radius: 50px;
+    width:100px;
+}
+.footer-section h2{
+    color:rgb(8, 107, 206)
+}
+.footer-section h3{
+    color:azure
+}
+.wcu-section{
+    display: flex;
+    padding:50px;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+.payment-section{
+    display: flex;
+    padding:50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+}
+.payment-section .description .heading{
+    margin-left: 15px;
+}
+.description{
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+    padding:10px;
+}
+.wcu-img{
+    width: 270px;
+    padding:4px;
+    border-radius: 10px;
+}
+
+.heading{
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+.custom-button{
+    color: white;
+    background-color: #d0b200;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
